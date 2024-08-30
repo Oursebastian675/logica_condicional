@@ -55,3 +55,20 @@ function calculoDescuento() {
     let totalConDescuento = total * (1 - descuento);
     console.log("El total con descuento es: " + totalConDescuento.toFixed(2));
   }
+//   punto5
+function compararDosNumeros() {
+    let numero1 = prompt("Ingresa el primer número:");
+    let numero2 = prompt("Ingresa el segundo número:");
+  
+    numero1 = Number(numero1);
+    numero2 = Number(numero2);
+  
+    if (numero1 > numero2) {
+      console.log("El primer número (" + numero1 + ") es mayor que el segundo (" + numero2 + ").");
+    } else if (numero1 < numero2) {
+      console.log("El segundo número (" + numero2 + ") es mayor que el primero (" + numero1 + ").");
+    } else {
+      console.log("Ambos números son iguales.");
+    }
+  }
+  
