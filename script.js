@@ -143,3 +143,16 @@ function tipoDeTriangulo() {
     }
   }
   
+//   punto10
+function adivinarNumero() {
+    const numeroSecreto = Math.floor(Math.random() * 10) + 1; // Número secreto aleatorio entre 1 y 10
+  
+    let adivinanza = prompt("Adivina un número entre 1 y 10:");
+    adivinanza = Number(adivinanza);
+  
+    if (adivinanza === numeroSecreto) {
+      console.log("¡Has acertado!");
+    } else {
+      console.log("Intenta de nuevo");
+    }
+  }
