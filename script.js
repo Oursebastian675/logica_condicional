@@ -185,3 +185,14 @@ function verificarAñoBisiesto() {
       console.log("El año " + año + " no es bisiesto.");
     }
   }
+//   punto13
+function autenticacionUsuario() {
+    let usuario = prompt("Ingresa tu nombre de usuario:");
+    let contraseña = prompt("Ingresa tu contraseña:");
+  
+    if (usuario === "admin" && contraseña === "1234") {
+      console.log("Acceso concedido");
+    } else {
+      console.log("Acceso denegado");
+    }
+  }
