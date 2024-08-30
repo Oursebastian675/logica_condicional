@@ -231,3 +231,56 @@ function clasificacionMasaCorporal() {
       console.log("Obesidad");
     }
   }
+
+//   menu
+let opcion = prompt("Selecciona una opción (1-15) para ejecutar un ejercicio:\n1. Comparar Edad\n2. Número Positivo o Negativo\n3. Par o Impar\n4. Cálculo de Descuento\n5. Comparar Dos Números\n6. Clasificación por Edad\n7. Clasificación de Notas\n8. Elección de Menú\n9. Tipo de Triángulo\n10. Adivinar un Número\n11. Cálculo del Precio Final\n12. Verificar el Año Bisiesto\n13. Autenticación de Usuario\n14. Determinar Horario del Día\n15. Clasificación de Masa Corporal\n");
+
+switch (opcion) {
+  case '1':
+    compararEdad();
+    break;
+  case '2':
+    numeroPositivoONegativo();
+    break;
+  case '3':
+    parOImpar();
+    break;
+  case '4':
+    calculoDescuento();
+    break;
+  case '5':
+    compararDosNumeros();
+    break;
+  case '6':
+    clasificacionPorEdad();
+    break;
+  case '7':
+    clasificacionDeNotas();
+    break;
+  case '8':
+    eleccionDeMenu();
+    break;
+  case '9':
+    tipoDeTriangulo();
+    break;
+  case '10':
+    adivinarNumero();
+    break;
+  case '11':
+    calculoPrecioFinal();
+    break;
+  case '12':
+    verificarAñoBisiesto();
+    break;
+  case '13':
+    autenticacionUsuario();
+    break;
+  case '14':
+    determinarHorarioDelDia();
+    break;
+  case '15':
+    clasificacionMasaCorporal();
+    break;
+  default:
+    console.log("Opción no válida");
+}
