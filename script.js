@@ -71,4 +71,19 @@ function compararDosNumeros() {
       console.log("Ambos números son iguales.");
     }
   }
+//   punto6
+function clasificacionPorEdad() {
+    let edad = prompt("Ingresa tu edad:");
+    edad = Number(edad);
+  
+    if (edad < 12) {
+      console.log("Eres un niño");
+    } else if (edad >= 12 && edad <= 17) {
+      console.log("Eres un adolescente");
+    } else if (edad >= 18 && edad <= 64) {
+      console.log("Eres un adulto");
+    } else if (edad >= 65) {
+      console.log("Eres un adulto mayor");
+    }
+  }
   
