@@ -124,3 +124,22 @@ function eleccionDeMenu() {
     }
   }
   
+//   punto9
+function tipoDeTriangulo() {
+    let lado1 = prompt("Ingresa el primer lado del triángulo:");
+    let lado2 = prompt("Ingresa el segundo lado del triángulo:");
+    let lado3 = prompt("Ingresa el tercer lado del triángulo:");
+  
+    lado1 = Number(lado1);
+    lado2 = Number(lado2);
+    lado3 = Number(lado3);
+  
+    if (lado1 === lado2 && lado2 === lado3) {
+      console.log("El triángulo es equilátero");
+    } else if (lado1 === lado2 || lado2 === lado3 || lado1 === lado3) {
+      console.log("El triángulo es isósceles");
+    } else {
+      console.log("El triángulo es escaleno");
+    }
+  }
+  
