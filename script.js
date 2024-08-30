@@ -211,3 +211,23 @@ function determinarHorarioDelDia() {
       console.log("Hora no válida");
     }
   }
+//   punto15
+function clasificacionMasaCorporal() {
+    let peso = prompt("Ingresa tu peso en kilogramos:");
+    let altura = prompt("Ingresa tu altura en metros:");
+  
+    peso = Number(peso);
+    altura = Number(altura);
+  
+    let imc = peso / (altura * altura);
+  
+    if (imc < 18.5) {
+      console.log("Bajo peso");
+    } else if (imc >= 18.5 && imc <= 24.9) {
+      console.log("Peso normal");
+    } else if (imc >= 25 && imc <= 29.9) {
+      console.log("Sobrepeso");
+    } else if (imc >= 30) {
+      console.log("Obesidad");
+    }
+  }
