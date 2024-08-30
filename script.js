@@ -87,3 +87,19 @@ function clasificacionPorEdad() {
     }
   }
   
+//   punto7
+function clasificacionDeNotas() {
+    let nota = prompt("Ingresa una nota entre 0 y 100:");
+    nota = Number(nota);
+  
+    if (nota >= 90) {
+      console.log("Excelente");
+    } else if (nota >= 70) {
+      console.log("Bueno");
+    } else if (nota >= 50) {
+      console.log("Regular");
+    } else {
+      console.log("Insuficiente");
+    }
+  }
+  
