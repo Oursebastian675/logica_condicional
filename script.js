@@ -156,3 +156,32 @@ function adivinarNumero() {
       console.log("Intenta de nuevo");
     }
   }
+//   punto11
+function calculoPrecioFinal() {
+    let precioBase = prompt("Ingresa el precio base del producto:");
+    precioBase = Number(precioBase);
+  
+    let descuento;
+    if (precioBase > 500) {
+      descuento = 0.15;
+    } else if (precioBase >= 300) {
+      descuento = 0.10;
+    } else {
+      descuento = 0.05;
+    }
+  
+    let precioFinal = precioBase * (1 - descuento);
+    console.log("El precio final después del descuento es: " + precioFinal.toFixed(2));
+  }
+
+//   punto12
+function verificarAñoBisiesto() {
+    let año = prompt("Ingresa un año:");
+    año = Number(año);
+  
+    if ((año % 4 === 0 && año % 100 !== 0) || (año % 400 === 0)) {
+      console.log("El año " + año + " es bisiesto.");
+    } else {
+      console.log("El año " + año + " no es bisiesto.");
+    }
+  }
