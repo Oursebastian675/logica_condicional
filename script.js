@@ -102,4 +102,25 @@ function clasificacionDeNotas() {
       console.log("Insuficiente");
     }
   }
+
+//   punto8
+function eleccionDeMenu() {
+    let opcion = prompt("Elige una opción de menú: 1 para 'Pizza', 2 para 'Hamburguesa', 3 para 'Tacos':");
+    opcion = Number(opcion);
+  
+    switch(opcion) {
+      case 1:
+        console.log("Has elegido Pizza");
+        break;
+      case 2:
+        console.log("Has elegido Hamburguesa");
+        break;
+      case 3:
+        console.log("Has elegido Tacos");
+        break;
+      default:
+        console.log("Opción no válida");
+        break;
+    }
+  }
   
