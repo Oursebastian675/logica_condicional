@@ -36,4 +36,22 @@ function parOImpar() {
       console.log("El número es impar");
     }
   }
+
+//   punto4
+
+function calculoDescuento() {
+    let total = prompt("Ingresa el total de la compra:");
+    total = Number(total);
   
+    let descuento;
+    if (total > 500) {
+      descuento = 0.15;
+    } else if (total >= 300) {
+      descuento = 0.10;
+    } else {
+      descuento = 0.05;
+    }
+  
+    let totalConDescuento = total * (1 - descuento);
+    console.log("El total con descuento es: " + totalConDescuento.toFixed(2));
+  }
